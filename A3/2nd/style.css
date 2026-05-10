@@ -1,0 +1,153 @@
+@font-face {
+    font-family: jap;
+    src: url(./mayashita.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #363047;
+    color: white;
+    font-family: helvetica;
+}
+
+.bgc{
+    background-image: url(./05e3a00c-0f33-41c3-bdf7-4a6699666696.png);
+    border-radius: 0 0 50% 50% / 0 0 18% 18%;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.bgc::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(./05e3a00c-0f33-41c3-bdf7-4a6699666696.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    transform: scale(1);
+    z-index: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 100;
+    position: relative;
+}
+
+nav img{
+    height: 80px;
+}
+
+.navc{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navc a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight:700;
+}
+
+.navr{
+    display: flex;
+    justify-content: center;
+}
+.navr i{
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 100;
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+}
+.sect1{
+    line-height: 90px;
+}
+
+#but{
+    padding: 18px 55px;
+    border: none;
+    background: #e7c56d;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    left: 47%;
+    z-index: 100;
+    top: 65%;
+}
+
+#but:hover{
+    transform: scale(1.1);
+}
+.sect1 h1{
+    font-family: jap;
+    font-size: 100px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+#last{
+    display: flex;
+    justify-content: flex-end;
+    /* text-align: end; */
+}
+
+.hero-img{
+    position: absolute;
+    height: 800px;
+
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 3;
+}
+
+.sect2 h1{
+    font-family: jap;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sect2 div{
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding-bottom: 90px;
+}
+
+.sect2 div p{
+    width: 400px;
+}
+
