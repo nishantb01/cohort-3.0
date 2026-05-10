@@ -1,0 +1,261 @@
+ *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: 'Poppins', sans-serif;
+      background:#fff;
+    }
+
+    .container{
+      width:100%;
+      height:100vh;
+      display:flex;
+      position:relative;
+    }
+
+    /* LEFT SIDE */
+    .left{
+      width:50%;
+      background:#f6f6f6;
+      position:relative;
+      padding:40px 55px;
+      height: 100vh;
+    }
+
+    /* RIGHT SIDE */
+    .right{
+      width:50%;
+      height: 100vh;
+      background:#c4372d;
+      position:relative;
+      padding:40px 80px;
+      color:white;
+    }
+
+    /* NAVBAR */
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:38px;
+      font-weight:700;
+      letter-spacing:2px;
+      color:#082f2a;
+    }
+
+    .search-box{
+      width:350px;
+      height:52px;
+      background:#ececec;
+      border-radius:40px;
+      display:flex;
+      align-items:center;
+      padding:0 22px;
+      gap:15px;
+      color:#555;
+    }
+
+    .search-box input{
+      border:none;
+      outline:none;
+      background:transparent;
+      width:100%;
+      font-size:22px;
+      color:#444;
+    }
+
+    .search-box i{
+      font-size:22px;
+    }
+
+    .menu{
+      display:flex;
+      gap:70px;
+      justify-content:flex-end;
+    }
+
+    .menu a{
+      text-decoration:none;
+      color:white;
+      font-size:24px;
+      font-weight:300;
+    }
+
+    /* CLASSIFICATION TEXT */
+    .vertical-text{
+      position:absolute;
+      left:30px;
+      top:90%;
+      transform:translateY(-50%) rotate(-90deg);
+      transform-origin:left top;
+      font-size:90px;
+      font-family:'Cormorant Garamond', serif;
+      color:#0d302b;
+      font-style:italic;
+      letter-spacing:2px;
+    }
+
+    /* INFO LIST */
+    .info-list{
+      position:absolute;
+      left:280px;
+      top:260px;
+      width:350px;
+    }
+
+    .info-item{
+      padding:18px 0;
+      border-bottom:1px solid #ddd;
+      position:relative;
+    }
+
+    .info-item::before{
+      content:'';
+      width:12px;
+      height:12px;
+      border-radius:50%;
+      background:#c4382f;
+      position:absolute;
+      left:-28px;
+      top:30px;
+    }
+
+    .info-item h3{
+      font-size:20px;
+      color:#111;
+      margin-bottom:8px;
+    }
+
+    .info-item p{
+      font-size:18px;
+      color:#222;
+    }
+
+    /* CENTER IMAGE */
+    .insect-image{
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%, -42%);
+      width:540px;
+      z-index:10;
+      filter:drop-shadow(0 30px 30px rgba(0,0,0,0.25));
+    }
+
+    /* RIGHT CONTENT */
+    .content{
+      position:absolute;
+      top:150px;
+      left:300px;
+      width:420px;
+    }
+
+    .title{
+      font-family:'Cormorant Garamond', serif;
+      font-size:86px;
+      line-height:0.95;
+      font-weight:400;
+      margin-bottom:45px;
+    }
+
+    .details{
+      display:flex;
+      gap:55px;
+      margin-bottom:55px;
+    }
+
+    .beetle-size{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      border-right:1px solid rgba(255,255,255,0.5);
+      padding-right:4px;
+      min-width:120px;
+    }
+
+    .beetle-size i{
+      font-size:58px;
+      margin-bottom:12px;
+    }
+
+    .beetle-size p{
+      font-size:24px;
+    }
+
+    .meta{
+      display:flex;
+      flex-direction:column;
+      gap:22px;
+    }
+
+    .meta-row{
+      display:flex;
+      gap:16px;
+      align-items:flex-start;
+      font-size:22px;
+    }
+
+    .meta-row i{
+      font-size:28px;
+      margin-top:3px;
+    }
+
+    .price{
+      font-size:70px;
+      color:#f4d59a;
+      font-weight:700;
+      margin-bottom:15px;
+    }
+
+    /* TOGGLE */
+    .toggle{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      margin-bottom:14px;
+      font-size:22px;
+    }
+
+    .switch{
+      width:48px;
+      height:28px;
+      background:#f1d4c4;
+      border-radius:30px;
+      position:relative;
+    }
+
+    .switch::before{
+      content:'';
+      width:22px;
+      height:22px;
+      border-radius:50%;
+      background:white;
+      position:absolute;
+      left:3px;
+      top:3px;
+    }
+
+    /* BUTTON */
+    .btn{
+      margin-top:4px;
+      width:340px;
+      height:74px;
+      border:none;
+      border-radius:18px;
+      background:#ecd1a0;
+      font-size:30px;
+      color:#222;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-4px);
+    }
